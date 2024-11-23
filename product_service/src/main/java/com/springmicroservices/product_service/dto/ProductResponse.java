@@ -1,4 +1,8 @@
 package com.springmicroservices.product_service.dto;
 
-public record ProductResponse() {
+
+import java.math.BigDecimal;
+
+public record ProductResponse(String id, String name, String description,
+                              String skuCode, BigDecimal price) {
 }
